@@ -1,7 +1,7 @@
 name: fast_rx_jaspr
-description: fast_rx, but for Jaspr
+description: Reactive Jaspr components and convenience components for fast_rx
 version: 0.1.0
-# homepage: https://www.example.com
+homepage: https://github.com/Rexios80/fast_ui_jaspr/tree/master/fast_rx_jaspr
 
 environment:
   sdk: ">=2.18.0 <3.0.0"
