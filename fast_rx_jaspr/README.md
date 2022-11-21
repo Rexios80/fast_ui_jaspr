@@ -1,4 +1,4 @@
-Reactive Flutter widgets and convenience components for fast_rx
+Reactive Jaspr components and convenience components for fast_rx
 
 [![pub package](https://img.shields.io/pub/v/fast_rx_jaspr)](https://pub.dev/packages/fast_rx_jaspr)
 [![codecov](https://img.shields.io/codecov/c/github/Rexios80/fast_ui_jaspr/master?flag=fast_rx_jaspr)](https://codecov.io/gh/Rexios80/fast_ui_jaspr)
