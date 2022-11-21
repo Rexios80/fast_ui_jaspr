@@ -1,0 +1,29 @@
+name: Test Coverage
+on:
+  push:
+  pull_request:
+
+jobs:
+  test-coverage:
+    strategy:
+      matrix:
+        project:
+          [
+            "fast_rx_jaspr",
+          ]
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@master
+      - uses: subosito/flutter-action@v2
+      - name: Pub get
+        run: flutter pub get
+      - name: Test
+        run: flutter test --coverage
+      - name: Upload report
+        uses: codecov/codecov-action@v2
+        with:
+          flags: ${{ matrix.project }}
