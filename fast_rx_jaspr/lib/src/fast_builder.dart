@@ -1,9 +1,9 @@
 import 'package:fast_rx/fast_rx.dart';
 import 'package:jaspr/jaspr.dart';
 
-/// A [StatefulWidget] that updates with it's observer
+/// A [StatefulComponent] that updates with it's observer
 class FastBuilder extends StatefulComponent {
-  /// A Widget builder containing reactive objects
+  /// A Component builder containing reactive objects
   final ValueGetter<Iterable<Component>> builder;
 
   /// Rebuild if the [condition] is true
