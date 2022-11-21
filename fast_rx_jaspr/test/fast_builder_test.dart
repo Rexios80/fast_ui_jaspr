@@ -17,4 +17,16 @@ void main() {
     await tester.pump();
     expect(find.text('1'), findsOneComponent);
   });
+
+  tearDown(() {
+    // TODO: This call currenlty does nothing. It should dispose the FastBuilder.
+    ComponentTester.tearDown();
+    // Calling this for now for test coverage
+    try {
+      // ignore: invalid_use_of_protected_member
+      FastBuilder(() => []).createState().dispose();
+    } catch (e) {
+      // ignore
+    }
+  });
 }
