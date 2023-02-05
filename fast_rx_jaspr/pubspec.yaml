@@ -1,6 +1,6 @@
 name: fast_rx_jaspr
 description: Reactive Jaspr components and convenience components for fast_rx
-version: 0.1.0
+version: 0.1.1
 homepage: https://github.com/Rexios80/fast_ui_jaspr/tree/master/fast_rx_jaspr
 
 environment:
