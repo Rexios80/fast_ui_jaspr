@@ -3,13 +3,7 @@ import 'package:jaspr/jaspr.dart';
 import 'package:jaspr_test/jaspr_test.dart';
 
 void main() {
-  late ComponentTester tester;
-
-  setUp(() {
-    tester = ComponentTester.setUp();
-  });
-
-  test('FastBuilder', () async {
+  testComponents('FastBuilder', (tester) async {
     final reactive = 0.rx;
     await tester.pumpComponent(FastBuilder(() => [Text('${reactive.value}')]));
     expect(find.text('0'), findsOneComponent);
@@ -19,8 +13,7 @@ void main() {
   });
 
   tearDown(() {
-    // TODO: This call currenlty does nothing. It should dispose the FastBuilder.
-    ComponentTester.tearDown();
+    // TODO: This shouldn't be necessary
     // Calling this for now for test coverage
     try {
       // ignore: invalid_use_of_protected_member
