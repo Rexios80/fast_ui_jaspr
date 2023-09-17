@@ -1,3 +1,6 @@
+## 0.1.7
+- Updates `jaspr`
+
 ## 0.1.6
 - Updates `jaspr`
 
