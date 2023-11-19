@@ -1,3 +1,6 @@
+## 0.1.8
+- Upgrades `fast_rx`
+
 ## 0.1.7
 - Updates `jaspr`
 
