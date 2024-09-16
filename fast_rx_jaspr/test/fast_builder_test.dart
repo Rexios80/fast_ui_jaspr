@@ -16,6 +16,7 @@ void main() {
     // TODO: This shouldn't be necessary
     // Calling this for now for test coverage
     try {
+      // This is for testing purposes only
       // ignore: invalid_use_of_protected_member
       FastBuilder(() => []).createState().dispose();
     } catch (e) {
