@@ -5,7 +5,7 @@ import 'package:jaspr_test/jaspr_test.dart';
 void main() {
   testComponents('FastBuilder', (tester) async {
     final reactive = 0.rx;
-    await tester.pumpComponent(FastBuilder(() => [Text('${reactive.value}')]));
+    tester.pumpComponent(FastBuilder(() => [Text('${reactive.value}')]));
     expect(find.text('0'), findsOneComponent);
     reactive.value = 1;
     await tester.pump();
