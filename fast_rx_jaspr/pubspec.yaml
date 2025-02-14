@@ -1,16 +1,16 @@
 name: fast_rx_jaspr
 description: Reactive Jaspr components and convenience components for fast_rx
-version: 0.1.13
+version: 0.1.14
 homepage: https://github.com/Rexios80/fast_ui_jaspr/tree/master/fast_rx_jaspr
 
 environment:
   sdk: ">=2.18.0 <4.0.0"
 
 dependencies:
-  jaspr: ^0.16.1
+  jaspr: ^0.17.1
   fast_rx: ^0.6.0
 
 dev_dependencies:
-  jaspr_test: ^0.16.1
-  rexios_lints: ^8.2.0
+  jaspr_test: ^0.17.1
+  rexios_lints: ^10.0.1
   test: ^1.16.0
